@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom'
 import { ConnectButton } from '@suiet/wallet-kit';
-import '../App.css';
+
 
 const Layout = () => {
 	return (
