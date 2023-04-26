@@ -1,26 +1,26 @@
 import logo from './logo.svg';
+import { Routes, Route, Link } from 'react-router-dom';
+// styles
 import './App.css';
-import { ConnectButton } from '@suiet/wallet-kit';
+
+// pages
+import { Homepage } from "./pages/Homepage/Homepage";
+import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
+import Layout from './components/Layout';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <ConnectButton />
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+        <Route path='/' element={<Layout />}>
+          <Route index element={<Homepage />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Route>
+
+      </Routes>
+    </>
   );
 }
 
