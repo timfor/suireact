@@ -1,10 +1,11 @@
 import React from 'react';
 import { NavLink, Outlet } from 'react-router-dom'
 import { ConnectButton } from '@suiet/wallet-kit';
+import { WalletProvider } from '@suiet/wallet-kit';
 
 const Layout = () => {
 	return (
-		<>
+		<WalletProvider>
 			<header>
 				<NavLink to='/'>Main</NavLink>
 				<NavLink to='/profile'>Go to not found page</NavLink>
@@ -17,7 +18,7 @@ const Layout = () => {
 			</main>
 
 			<footer>footer</footer>
-		</>
+		</WalletProvider>
 	);
 }
 
