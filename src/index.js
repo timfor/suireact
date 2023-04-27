@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 
 
 import '@suiet/wallet-kit/style.css';
+// хуйня обертка из-за нее нихуя не воркает
+import { WalletProvider } from '@suiet/wallet-kit';
 
 
 import { BrowserRouter } from 'react-router-dom';
@@ -13,9 +15,13 @@ import { BrowserRouter } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+
+    <WalletProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </WalletProvider>
+
   </React.StrictMode>
 );
 

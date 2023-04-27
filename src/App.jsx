@@ -14,13 +14,11 @@ import Layout from "./components/Layout"
 function App() {
   return (
     <>
-
       <Routes>
-        <Route path='/' element={<Homepage />} >
-          <Route index element={<p>index elem</p>} />
-          <Route path="homepage" element={<p>index elem</p>} />
+        <Route path='/' element={<Layout />} >
+          <Route index element={<p>index page suka</p>} />
+          <Route path="homepage" element={<Homepage />} />
           <Route path='*' element={<NotFoundPage />} />
-          <Route path='/layout' element={<Layout />} />
         </Route>
       </Routes >
     </>
