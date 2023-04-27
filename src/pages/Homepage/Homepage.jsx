@@ -2,8 +2,9 @@ import React from 'react';
 
 const Homepage = () => {
 	return (
-		<div className="container">
-
+		<div >
+			<p>rot ebal</p>
+			<p>homepage</p>
 		</div>
 	);
 }

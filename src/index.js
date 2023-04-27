@@ -3,18 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+
+
 import { WalletProvider } from '@suiet/wallet-kit';
 import '@suiet/wallet-kit/style.css';
+
+
 import { BrowserRouter } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <WalletProvider>
+    <WalletProvider>
+      <BrowserRouter>
         <App />
-      </WalletProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </WalletProvider>
   </React.StrictMode>
 );
 

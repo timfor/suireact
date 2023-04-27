@@ -44,10 +44,13 @@ h1 {
 
 
 .container {
-  max-width: 900px;
+  max-width: 1400px;
+  min-height: 600px;
   padding-left: 2rem;
   padding-right: 2rem;
   margin: 0 auto;
+
+  background-color: var(--color-bg);
 }
 
 main {

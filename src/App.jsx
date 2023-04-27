@@ -15,13 +15,14 @@ import Layout from './components/Layout';
 function App() {
   return (
     <>
+
       <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Homepage />} />
+        <Route path='/' element={<Layout />} >
+          <Route index element={<p>index elem</p>} />
+          <Route path="homepage" element={<Homepage />} />
           <Route path='*' element={<NotFoundPage />} />
         </Route>
-
-      </Routes>
+      </Routes >
     </>
   );
 }
