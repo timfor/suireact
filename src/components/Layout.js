@@ -9,7 +9,7 @@ const Layout = () => {
 				<NavLink to='/'>Main</NavLink>
 				<NavLink to='/profile'>Go to not found page</NavLink>
 				<NavLink to='/homepage'>Homepage</NavLink>
-				<ConnectButton>Connect</ConnectButton>
+				<ConnectButton>Connect1</ConnectButton>
 			</header>
 
 			<main>
